@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Resume</title>
+    <style>
+        *{
+            font-family: 'poppins';
+            max-width: 960px;
+            /* max-height: 958px; */
+        }
+
+        body{
+            /* border-top-width: 10px;
+            border-top-style: solid;
+            border-right-width: 10px;
+            border-right-style: solid;
+            border-bottom-width: 10px;
+            border-bottom-style: solid;
+            border-left-width: 10px;
+            border-left-style: solid; */
+            padding: 10px 0;
+        }
+
+        .header{
+            margin: 0 auto;
+            padding: 0px 10px 0px;
+        }
+
+        .header h1{
+            font-size: 39px;
+            font-weight: 900;
+        }
+
+        .contacts{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .body{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: start;
+        }
+
+        .left{
+            max-width: 59%;
+            padding: 0 10px;
+        }
+
+        .right{
+            max-width: 37%;
+            padding: 0 10px;
+        }
+
+        .sectionTitle{
+            margin: 0;
+            font-size: 28px;
+            padding: 10px 5px 0;
+            font-weight: bolder;
+        }
+
+        hr{
+            margin: 0;
+            height: 3px;
+            background-color: #000;
+            border: none;
+        }
+
+        .subSec{
+            margin-left: 10px;
+            text-align: left;
+        }
+
+        .title{
+            margin: 0;
+            text-align: left;
+            font-weight: normal;
+            font-size: 25px;
+        }
+
+        .company{
+            color: rgb(170, 32, 32);
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .whenWhere{
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            margin: 0;
+        }
+
+        p{
+            margin: 0;
+        }
+
+        ul{
+            margin: 5px;
+        }
+
+        p,li{
+            font-size: 15px;
+        }
+
+        h1{
+            margin: 0;
+        }
+
+        .indent{
+            padding-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>CARSON SPANIEL</h1>
+        <div class="contacts">
+            <div email>
+                <p>carsonspaniel@gmail.com</p>
+            </div>
+            <p>&#x2022;</p>
+            <div class="phone">
+                <p>512-761-0870</p>
+            </div>
+            <p>&#x2022;</p>
+            <div class="linkedIn">
+                <p>https://www.linkedin.com/in/carson-spaniel</p>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="left">
+            <div class="section">
+                <h1 class="sectionTitle">WORK EXPERIENCE</h1>
+                <hr>
+                <div class="subSec">
+                    <h2 class="title">Full-Stack Software Engineer</h2>
+                    <h3 class="company">Red Raider Racing</h3>
+                    <div class="whenWhere leftgap">
+                        <div class="when">
+                            <p>August 2023 - Present</p>
+                        </div>
+                        <p>&nbsp;&nbsp;</p>
+                        <p>&#x2022;</p>
+                        <p>&nbsp;&nbsp;</p>
+                        <div class="where">
+                            <p>Lubbock, Texas</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Designed and engineered the organization's website, leveraging Django, Python, HTML, CSS, and JavaScript to create a robust and scalable platform</li>
+                        <li>Conducted rigorous performance analysis to identify bottlenecks and optimized website load times by an impressive 44% through advanced algorithmic optimizations</li>
+                        <li>Developed a highly modular and extensible website architecture, ensuring seamless updates and adaptability to changing requirements</li>
+                        <li>Implemented sophisticated caching strategies, resulting in substantial speed improvements and efficient data retrieval</li>
+                        <li>Demonstrated unwavering commitment to continuous learning and improvement, staying at the forefront of industry trends and best practices</li>
+                    </ul>
+                </div>
+                <div class="subSec">
+                    <h2 class="title">Data Analyst</h2>
+                    <h3 class="company">NemaLife Inc</h3>
+                    <div class="whenWhere leftgap">
+                        <div class="when">
+                            <p>January 2023 - October 2023</p>
+                        </div>
+                        <p>&nbsp;&nbsp;</p>
+                        <p>&#x2022;</p>
+                        <p>&nbsp;&nbsp;</p>
+                        <div class="where">
+                            <p>Lubbock, Texas</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Processed and analyzed extensive data sets, identifying patterns, trends, and insights to support experiments and research initiatives</li>
+                        <li>Completed projects involving the utilization of APIs to retrieve and manipulate data for the development of performance dashboards</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <h1 class="sectionTitle">PROJECTS</h1>
+                <hr>
+                <div class="subSec">
+                    <h2 class="title">cookify-recipes.com</h2>
+                    <div class="whenWhere">
+                        <div class="when">
+                            <p>July 2023</p>
+                        </div>
+                        <!-- <div class="where">
+                            <p>Lubbock, Texas</p>
+                        </div> -->
+                    </div>
+                    <ul>
+                        <li>Developed a responsive recipe website using Django framework, integrating front-end and back-end skills</li>
+                        <li>Implemented a user-friendly login system</li>
+                        <!-- <li>Leveraged HTML, CSS, and JavaScript to create an attractive and cohesive front-end</li> -->
+                        <li>Utilized JSON responses for seamless communication with the Python backend</li>
+                        <li>Emphasized page optimization for consistent layouts and reduced code redundancy</li>
+                    </ul>
+                </div>
+                <div class="subSec">
+                    <h2 class="title">Book Stacker</h2>
+                    <div class="whenWhere">
+                        <div class="when">
+                            <p>June 2023</p>
+                        </div>
+                        <!-- <div class="where">
+                            <p>Lubbock, Texas</p>
+                        </div> -->
+                    </div>
+                    <ul>
+                        <li>Developed a Django-based book tracking website, integrating HTML frontend and Python backend</li>
+                        <li>Utilized web page caching techniques to optimize performance. Integrated APIs to connect the website with ISBNdb for enhanced functionality</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="section">
+                <h1 class="sectionTitle">EDUCATION</h1>
+                <hr>
+                <div class="subSec">
+                    <div class="whenWhere rightgap">
+                        <div class="when">
+                            <p>May 2024</p>
+                        </div>
+                        <p>&nbsp;&nbsp;</p>
+                        <p>&#x2022;</p>
+                        <p>&nbsp;&nbsp;</p>
+                        <div class="where">
+                            <p>GPA: <b>3.581</b></p>
+                        </div>
+                    </div>
+                    <h3 class="company">Texas Tech University</h3>
+                    <p class="indent">Lubbock, Texas</p>
+                    <p>Bachelor of Science</p>
+                    <p class="indent">Major in Computer Science</p>
+                    <p class="indent">Minor in Mathematics</p>
+                </div>
+            </div>
+            <div class="section">
+                <h1 class="sectionTitle">TECHNICAL SKILLS</h1>
+                <hr>
+                <ul>
+                    <li>Django</li>
+                    <li>Python</li>
+                    <li>C</li>
+                    <li>HTML</li>
+                    <li>JavaScript</li>
+                    <li>CSS</li>
+                    <li>SQL</li>
+                    <li>Java</li>
+                    <li>Rust</li>
+                    <li>SEO</li>
+                    <li>Heroku</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h1 class="sectionTitle">SOFT SKILLS</h1>
+                <hr>
+                <ul>
+                    <li>Performance Optimization</li>
+                    <li>Problem-solving</li>
+                    <li>Critical thinking</li>
+                    <li>Strategic planning</li>
+                    <li>Analytical skills</li>
+                    <li>Collaboration</li>
+                    <li>Time management</li>
+                    <li>Communication</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h1 class="sectionTitle">CERTIFICATIONS</h1>
+                <hr>
+                <ul>
+                    <li>Intro to Front-End Development <i>(Meta)</i></li>
+                    <li>Intro to Back-End Development <i>(Meta)</i></li>
+                    <li>Programming in Python <i>(Meta)</i></li>
+                    <li>Programming in JavaScript <i>(Meta)</i></li>
+                    <li>Version Control <i>(Meta)</i></li>
+                    <li>Intro to Databases for Back-End Development <i>(Meta)</i></li>
+                    <li>Django Web Framework <i>(Meta)</i></li>
+                    <li>Python <i>(Mimo)</i></li>
+                    <li>SQL <i>(Mimo)</i></li>
+                </ul>
+            </div>
+            <div class="section">
+                <h1 class="sectionTitle">HONORS</h1>
+                <hr>
+                <ul>
+                    <li>President's List (Fall 2021, Fall 2022)</li>
+                    <li>Dean's List (Spring 2023)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,4 +1,4 @@
-<!-- Add left margin of .45inches for printing -->
+<!-- Add left margin of .6inches for printing -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +7,10 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <title>Resume</title>
     <style>
+        :root{
+            --primary: rgb(170, 32, 32);
+        }
+
         *{
             font-family: 'poppins';
             max-width: 960px;
@@ -32,13 +36,15 @@
 
         .header h1{
             font-size: 39px;
-            font-weight: 900;
+            font-weight: normal;
+            margin-bottom: 5px;
+            text-align: center;
         }
 
         .contacts{
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
         }
 
@@ -61,16 +67,23 @@
 
         .sectionTitle{
             margin: 0;
-            font-size: 28px;
+            font-size: 25px;
             padding: 10px 5px 0;
-            font-weight: bolder;
+            font-weight: normal;
         }
 
         hr{
             margin: 0;
-            height: 3px;
+            height: 2px;
             background-color: #000;
             border: none;
+        }
+
+        hr.thin{
+            height: 1px;
+            width: 85%;
+            margin: 5px auto;
+            margin-top: 10px;
         }
 
         .subSec{
@@ -78,17 +91,25 @@
             text-align: left;
         }
 
+        .subSec ul{
+            padding: 0 15px;
+        }
+
         .title{
             margin: 0;
             text-align: left;
-            font-weight: normal;
             font-size: 25px;
+            color: var(--primary);
+        }
+
+        .title.small{
+            font-size: 22px;
         }
 
         .company{
-            color: rgb(170, 32, 32);
             margin: 0;
             font-size: 18px;
+            font-weight: normal;
         }
 
         .whenWhere{
@@ -128,14 +149,14 @@
             <div email>
                 <p>carsonspaniel@gmail.com</p>
             </div>
-            <p>&#x2022;</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2022;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
             <div class="phone">
                 <p>512-761-0870</p>
             </div>
-            <p>&#x2022;</p>
+            <!-- <p>&#x2022;</p>
             <div class="linkedIn">
                 <p>https://www.linkedin.com/in/carson-spaniel</p>
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="body">
@@ -145,7 +166,7 @@
                 <hr>
                 <div class="subSec">
                     <h2 class="title">Full-Stack Software Engineer</h2>
-                    <h3 class="company">Red Raider Racing</h3>
+                    <h3 class="company">Red Raider Racing</h3> 
                     <div class="whenWhere leftgap">
                         <div class="when">
                             <p>August 2023 - Present</p>
@@ -203,6 +224,7 @@
                     </div>
                     <ul>
                         <li>Developed a responsive recipe website using Django framework, integrating front-end and back-end skills</li>
+                        <li>Integrated external APIs to retrieve recipes from an extensive online database</li>
                         <li>Implemented a user-friendly login system</li>
                         <!-- <li>Leveraged HTML, CSS, and JavaScript to create an attractive and cohesive front-end</li> -->
                         <li>Utilized JSON responses for seamless communication with the Python backend</li>
@@ -231,9 +253,12 @@
                 <h1 class="sectionTitle">EDUCATION</h1>
                 <hr>
                 <div class="subSec">
+                    <h2 class="title small">B.S in Computer Science</h2>
+                    <p class="company indent">Texas Tech University</p>
+                    <p class="indent">Minor in Mathematics</p>
                     <div class="whenWhere rightgap">
                         <div class="when">
-                            <p>May 2024</p>
+                            <p class="indent">May 2024</p>
                         </div>
                         <p>&nbsp;&nbsp;</p>
                         <p>&#x2022;</p>
@@ -242,29 +267,44 @@
                             <p>GPA: <b>3.581</b></p>
                         </div>
                     </div>
-                    <h3 class="company">Texas Tech University</h3>
-                    <p class="indent">Lubbock, Texas</p>
-                    <p>Bachelor of Science</p>
-                    <p class="indent">Major in Computer Science</p>
-                    <p class="indent">Minor in Mathematics</p>
+                    <!-- <p class="indent">Lubbock, Texas</p> -->
+                    <!-- <p>Bachelor of Science</p> -->
+                </div>
+
+                <div class="subSec">
+                    <h2 class="title small">Study Abroad Program</h2>
+                    <p class="company indent">TTU Center in Seville, Spain</p>
+                    <div class="whenWhere rightgap">
+                        <div class="when">
+                            <p class="indent">May 2023 - July 2023</p>
+                        </div>
+                        <p>&nbsp;&nbsp;</p>
+                        <p>&#x2022;</p>
+                        <p>&nbsp;&nbsp;</p>
+                        <div class="where">
+                            <p>GPA: <b>4.00</b></p>
+                        </div>
+                    </div>
+                    <!-- <p class="indent">Lubbock, Texas</p> -->
+                    <!-- <p>Bachelor of Science</p> -->
                 </div>
             </div>
             <div class="section">
                 <h1 class="sectionTitle">TECHNICAL SKILLS</h1>
                 <hr>
                 <ul>
-                    <li>Django</li>
-                    <li>Python</li>
-                    <li>C</li>
-                    <li>HTML</li>
+                    <li>C Programming</li>
+                    <li>HTML and CSS</li>
                     <li>JavaScript</li>
-                    <li>CSS</li>
+                    <li>Python</li>
+                    <li>Django</li>
                     <li>SQL</li>
-                    <li>Java</li>
-                    <li>API</li>
+                    <li>APIs</li>
                     <li>JSON</li>
                     <li>Git</li>
+                    <li>Java</li>
                     <li>Heroku</li>
+                    <li>CI/CD</li>
                 </ul>
             </div>
             <div class="section">
